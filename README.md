@@ -1,6 +1,10 @@
+Ссылка на проект: https://invis.io/7EFLBTFH3VD
+
+
 Предлагаю вам сделать верстку двух страниц:
-1. авторизации 
-2. регистрации.
+1. авторизации - https://invis.io/7EFLBTFH3VD#/276385427_User_Authorization_Page_-Sign_In-_-_Incorrect_Password
+2. регистрации - https://invis.io/7EFLBTFH3VD#/276385430_User_Authorization_Page_-Sign_Up-
+
 
 Для браузеров и мобильных устройств.
 
@@ -18,3 +22,8 @@
 3. re-password - повтор пароля
 
 Для отображения ошибок используйте пожалуйста для поля класс - status-inner.
+
+
+Если возникнут вопросы напишите мне пожалуйста: sales@cellyco.com
+
+Спасибо.
