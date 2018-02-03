@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+		body {
+			background-color: #03A9F4;
+			font-family: Roboto;
+	 	}
+
+		main.login > .row {
+			position: relative;
+			background-color: #fff;
+			margin: 130px 30px;
+			border-radius: 5px;
+			box-shadow: 0 30px 100px rgba(0,0,0,0.4);
+		}
+		
+		main.login div[class*="col-"]{
+			padding: 0;
+		}
+
+		.login-splash img {
+			width: 100%;
+		}
+
+		.login-form {
+			display: flex;
+			align-items: center;
+		}
+
+		.login-form form {
+			width: 100%;
+			margin-left: 100px;
+		}
+
+		.form-group:not(.pass-rec) {
+			margin-bottom: 0.2rem;
+			margin-top: 0.5rem;
+		}
+		
+		.status-inner {
+			/*display: none;*/
+		}
+		
+		.status-text {
+			line-height: 2;
+		}
+
+		#check {
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		@keyframes checkbox-hover {
+			0% {color: #E9E9E9;}
+			100% {color: #03A9F4;}
+		}
+
+		#check:hover .fa-square {
+			animation: checkbox-hover .3s forwards;
+		}
+
+		#checkbox {
+			display: none;
+		}
+
+		.fa-square {
+			position: absolute;
+			display: block;
+			color: #E9E9E9;
+			font-size: 1.3em;
+			margin-top: -2px;
+		}
+
+		.fa-check-square {
+			visibility: hidden;
+			color: #03A9F4;
+			font-size: 1.3em;
+			float: left;
+			margin-top: -2px;
+		}
+
+		.checkbox-label {
+			margin-left: 10px;
+			font-size: 0.8em;
+			font-weight: 500;
+			color: #8A959A;
+			float: left;
+		}
+
+		.pass-recovery {
+			font-size: 0.8em;
+			font-weight: bold;
+			float: right;
+		}
+
+		.pass-recovery a {
+			color: #18B0F5;
+		}
+
+		.pass-rec-row {
+			position: relative;
+		}
+
+		.login-form h4 {
+			/*margin-bottom: 5px;*/
+		}
+		
+		.login-form .btn {
+			width: 48%;
+			color: #fff !important;
+			font-size: 0.9em;
+			border-radius: 20px;
+			background-color: #03A9F4;
+			border: 2px solid #03A9F4;
+		}
+
+		.login-form .btn:focus {
+			box-shadow: none !important;
+		}
+		
+		.login-form .btn:hover {
+			background-color: #068dca;
+			border-color: #068dca;
+		}
+
+		#sign-up-button {
+			background-color: #fff;
+			color: #03A9F4 !important;
+		}
+
+		#sign-up-button:hover {
+			color: #068dca !important;
+		}
+
+		input::placeholder {
+			color: #8A959A !important;
+			font-size: 0.9em;
+		}
+
+		input {
+			border-color: #E9E9E9 !important;
+		}
+
+		.form-control:focus {
+			border: 1px solid #7dd7ff !important;
+			box-shadow: 0 0 0.5rem #03a9f46e;
+		}
+
+		.logo {
+			position: absolute;
+			top: 25px;
+			left: -10px;
+			z-index: 10;
+		}
+
+		.button-row {
+			clear: both;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.login-form form {
+				margin: 30px 15px;
+			}
+
+			main.login > .row {
+				margin: 0;
+				border-radius: 0;
+				height: 100vh;
+			}
+
+			.login-form .button-row {
+				margin-top: 30px;
+			}
+		}
