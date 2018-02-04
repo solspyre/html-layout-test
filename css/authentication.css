@@ -59,15 +59,26 @@
 			margin-top: 0.7rem;
 		}
 		
-		.status-text {
-			line-height: 2;
+		/*--- Status field ---*/
+		.status-field {
+			height: 20px;
 		}
 
+		.status-inner {
+			display: none;
+			font-size: 0.8em;
+			color: #e21f1f;
+		}
+
+		.status-inner span {
+			margin-right: 5px;
+		}
+
+		/*--- CSS/JS animated checkbox ---*/
 		.checkbox-row {
 			position: relative;
 		}
 
-		/*--- CSS/JS animated checkbox ---*/
 		#check {
 			display: flex;
 			cursor: pointer;
