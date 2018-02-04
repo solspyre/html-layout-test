@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Login</title>
+	<title>Sign Up</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/authentication.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -16,27 +16,35 @@
 					<img src="images/Logo@1xMobile.png" class="d-md-none" alt="logo">
 				</div>
 
-				<!-- Splash section -->
+				<!-- splash section -->
 				<div class="auth-splash col-md-6">
-					<img src="images/signin-splash.png" alt="city" class="d-none d-md-block">
+					<img src="images/signup-splash.png" alt="city" class="d-none d-md-block">
 					<img src="images/signup-splash-mobile.png" alt="city" class="d-md-none">
 				</div>
 
-				<!-- Form section -->
+				<!-- form section -->
 				<div class="auth-form col-md-6">
 					<form class="col-md-8 col-lg-7 needs-validation" novalidate>
-							<h4>Log in</h4>
+							<h4>Sign Up</h4>
 							<div class="form-group">
-								<!-- Error field -->
 								<div class="status-inner">
 									<p class="status-text">&nbsp;</p>
 								</div>
 							</div>
 							<div class="form-group">
+								<input type="text" placeholder="Name" class="form-control" name="name" id="name" required>
+							</div>
+							<div class="form-group">
 								<input type="email" placeholder="Email" class="form-control" name="mail" id="mail" required>
 							</div>
 							<div class="form-group">
+								<input type="email" placeholder="Re-enter email" class="form-control" name="re-mail" id="re-mail" required>
+							</div>
+							<div class="form-group">
 								<input type="password" placeholder="Password" class="form-control" name="password" id="password" required>
+							</div>
+							<div class="form-group">
+								<input type="password" placeholder="Re-enter password" class="form-control" name="re-password" id="re-password" required>
 							</div>
 							<div class="form-group checkbox-row">
 								<div id="check">
@@ -44,15 +52,19 @@
 									<span class="far fa-square">
 									</span>
 									<span class="fas fa-check-square"></span>
-									<span class="checkbox-label">Stay signed in</span>
-								</div>
-								<div class="pass-recovery-btn">
-									<a href="">Forgot password?</a>
+									<span class="checkbox-label">
+										Receive our weekly newsletter and other occasional updates
+									</span>
 								</div>
 							</div>
-							<div class="form-group btn-row">
-								<button class="btn btn-primary float-left" id="login-button" type="submit">LOG IN</button>
-								<button type="button" class="btn btn-primary float-right" id="signup-button" onclick="window.location ='signup.html'">SING UP</button>
+							<div class="form-group btn-row clearfix">
+								<button class="btn btn-primary float-left" id="signup-button" type="submit">SIGN UP</button>
+								<button type="button" class="btn btn-primary float-right" id="login-button" onclick="window.location ='login.html'">LOG IN</button>
+							</div>
+							<div>
+								<p class="terms">
+									By signing up you agree to out <a href="#">terms of use</a>, <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+								</p>
 							</div>
 					</form>
 				</div>
