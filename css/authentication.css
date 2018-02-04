@@ -28,16 +28,29 @@
 			z-index: 10;
 		}
 
-		input::placeholder {
-			color: #8A959A !important;
-			font-size: 14px;
-			margin-left: 50px;
-		}
-
 		input {
 			border-color: #E9E9E9 !important;
 			font-size: 14px !important;
 			line-height: 2 !important;
+		}
+
+		input:placeholder {
+			color: #8A959A !important;
+			font-size: 14px;
+		}
+
+		input[type="password"] {
+			font: small-caption;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
+		
+		/*--- Experimental pseudoclass. 
+		IE/Edge family not supported on both desktop and mobile devices,
+		Opera on mobiles ---*/
+		input[type="password"]:placeholder-shown {
+			letter-spacing: 0;
+			font-weight: normal;
 		}
 
 		h1, h2, h3, h4, h5 {
@@ -68,6 +81,7 @@
 			display: none;
 			font-size: 0.8em;
 			color: #e21f1f;
+			font-weight: 500;
 		}
 
 		.status-inner span {
@@ -178,10 +192,13 @@
 			padding: 15px 0;
 		}
 
-		.terms {
+		.form-bottom-info {
 			font-size: .75em;
 			font-weight: 500;
 			color: #8A959A;
+		}
+
+		.terms {
 			padding-left: 28px;
 		}
 
