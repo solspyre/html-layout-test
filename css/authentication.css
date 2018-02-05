@@ -8,7 +8,6 @@
 		main.auth > .row {
 			position: relative;
 			background-color: #fff;
-			margin: 130px 30px;
 			border-radius: 5px;
 			box-shadow: 0 30px 100px rgba(0,0,0,0.4);
 		}
@@ -32,16 +31,18 @@
 			border-color: #E9E9E9 !important;
 			font-size: 14px !important;
 			line-height: 2 !important;
+			text-indent: 7px;
 		}
 
-		input:placeholder {
-			color: #8A959A !important;
-			font-size: 14px;
+		input:placeholder-shown,
+		input::-webkit-input-placeholder {
+			color: #949494 !important;
+			text-indent: 7px;
 		}
 
 		input[type="password"] {
 			font: small-caption;
-			letter-spacing: 2px;
+			letter-spacing: 3px;
 			font-weight: bold;
 		}
 		
@@ -54,7 +55,7 @@
 		}
 
 		h1, h2, h3, h4, h5 {
-			color: #423f3f;
+			font-weight: 500;
 		}
 
 		.auth-form {
@@ -62,42 +63,29 @@
 			align-items: center;
 		}
 
-		.auth-form form {
-			width: 100%;
-			margin-left: 80px;
-		}
-
 		.form-group {
-			margin-bottom: 0.2rem;
-			margin-top: 0.7rem;
+			margin: .6em 0;
 		}
 		
 		/*--- Status field ---*/
 		.status-field {
 			min-height: 20px;
+			margin: 15px 0;
+			color: #e21f1f;
 		}
 
 		.status-inner {
 			display: none;
 			font-size: 0.8em;
-			color: #e21f1f;
 			font-weight: 500;
 		}
 
 		.status-inner span {
-			margin-right: 5px;
+			margin-right: 3px;
 		}
+
 
 		/*--- CSS/JS animated checkbox ---*/
-		.checkbox-row {
-			position: relative;
-		}
-
-		#check {
-			display: flex;
-			cursor: pointer;
-		}
-
 		@keyframes checkbox-hover {
 			0% {color: #E9E9E9;}
 			100% {color: #03A9F4;}
@@ -116,12 +104,21 @@
 			animation: checkbox-invalid-hover .2s forwards;
 		}
 
-		#checkbox {
-			display: none;
-		}
-
 		form[class*="was-validated"] #checkbox:invalid ~ .fa-square {
 			color: #f3838d;
+		}
+
+		.checkbox-row {
+			position: relative;
+		}
+
+		#check {
+			display: flex;
+			cursor: pointer;
+		}
+
+		#checkbox {
+			display: none;
 		}
 
 		.fa-square {
@@ -142,7 +139,7 @@
 		.checkbox-label {
 			font-size: .75em;
 			font-weight: 500;
-			color: #8A959A;
+			color: #949494;
 			padding-left: 28px;
 		}
 
@@ -155,9 +152,9 @@
 		
 		/*--- Button styles ---*/
 		.auth-form a {
-			color: #18B0F5;
 			font-size: 12px;
 			font-weight: bold;
+			color: #1AB1F5;
 		}
 		
 		.auth-form .btn {
@@ -167,6 +164,7 @@
 			border-radius: 20px;
 			background-color: #03A9F4;
 			border: 2px solid #03A9F4;
+			font-weight: 500;
 		}
 
 		.auth-form .btn:focus {
@@ -189,7 +187,7 @@
 
 		.btn-row {
 			clear: both;
-			padding: 15px 0;
+			padding: 10px 0;
 		}
 
 		.form-bottom-info {
@@ -234,11 +232,24 @@
 			box-shadow: 0 0 0.5rem #00670424;
 		}
 
+		.recovery-description {
+			margin: 25px 0;
+		}
+
 
 		/*--- Mobile devices/smaller screens support ---*/
-		@media only screen and (min-width: 992px) {
+		@media only screen and (min-width: 1200px) {
+			main.auth > .row {
+				margin: 130px 30px;
+			}
+
 			.auth-form form {
-				margin-left: 80px !important;
+				margin-left: 90px !important;
+				padding-right: 35px;
+			}
+
+			h1, h2, h3, h4, h5 {
+				margin-top: 25px;
 			}
 		}
 
