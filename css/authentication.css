@@ -264,23 +264,27 @@
 				background-color: #fff;
 			}
 
+			.auth-form {
+				align-items: flex-start;
+			}
+
 			.auth-form form {
-				margin: 30px 15px;
+				margin: 0 15px 0px 15px;
 			}
 
 			main.auth > .row {
 				margin: 0;
 				border-radius: 0;
-				height: 100vh;
+				/*height: 100vh;*/
 				box-shadow: none;
 			}
 
-			.auth-form .button-row {
-				margin-top: 30px;
+			.auth-form form {
+
 			}
 
 			.logo {
-				top: 30px;
+				top: 23px;
 			}
 		}
 		
