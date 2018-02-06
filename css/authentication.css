@@ -269,18 +269,14 @@
 			}
 
 			.auth-form form {
-				margin: 0 15px 0px 15px;
+				margin: 30px 15px;
 			}
 
 			main.auth > .row {
 				margin: 0;
 				border-radius: 0;
-				/*height: 100vh;*/
+				height: 100vh;
 				box-shadow: none;
-			}
-
-			.auth-form form {
-
 			}
 
 			.logo {
