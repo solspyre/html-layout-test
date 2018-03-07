@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+		
+		html {
+			height: 100%;
+		}
 
 		body {
-			background-color: #03A9F4;
-			font-family: 'Roboto';
+			background: #03A9F4;
+			font-family: 'Roboto', sans-serif;
+			min-height: 100%;
+			width: 100%;
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 	}
+
+	 	main {
+	 		display: flex;
+	 		justify-content: center;
+			width: 100%;
 	 	}
 
 		main.auth > .row {
 			position: relative;
+			width: 100%;
 			background-color: #fff;
 			border-radius: 5px;
 			box-shadow: 0 30px 100px rgba(0,0,0,0.4);
@@ -221,15 +237,10 @@
 			border: 1px solid #7fe281 !important;
 			box-shadow: 0 0 0.5rem #00670424;
 		}
-		
-		.was-validated .form-control:invalid {
+
+		.was-validated input:invalid {
 			border: 1px solid #ff919b !important;
 			box-shadow: 0 0 0.5rem #ff000024;
-		}
-
-		.was-validated .form-control:valid {
-			border: 1px solid #7fe281 !important;
-			box-shadow: 0 0 0.5rem #00670424;
 		}
 
 		.recovery-description {
